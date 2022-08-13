@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Learning Courses\\IC SJRP\\talent-competition\\Talent.Common\\Talent.Common.csproj": {}
+    "D:\\Learning Courses\\IC SJRP\\talent-competition-task\\Talent.Common\\Talent.Common.csproj": {}
   },
   "projects": {
-    "D:\\Learning Courses\\IC SJRP\\talent-competition\\Talent.Common\\Talent.Common.csproj": {
+    "D:\\Learning Courses\\IC SJRP\\talent-competition-task\\Talent.Common\\Talent.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Learning Courses\\IC SJRP\\talent-competition\\Talent.Common\\Talent.Common.csproj",
+        "projectUniqueName": "D:\\Learning Courses\\IC SJRP\\talent-competition-task\\Talent.Common\\Talent.Common.csproj",
         "projectName": "Talent.Common",
-        "projectPath": "D:\\Learning Courses\\IC SJRP\\talent-competition\\Talent.Common\\Talent.Common.csproj",
+        "projectPath": "D:\\Learning Courses\\IC SJRP\\talent-competition-task\\Talent.Common\\Talent.Common.csproj",
         "packagesPath": "C:\\Users\\LeeZh\\.nuget\\packages\\",
-        "outputPath": "D:\\Learning Courses\\IC SJRP\\talent-competition\\Talent.Common\\obj\\",
+        "outputPath": "D:\\Learning Courses\\IC SJRP\\talent-competition-task\\Talent.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LeeZh\\AppData\\Roaming\\NuGet\\NuGet.Config",

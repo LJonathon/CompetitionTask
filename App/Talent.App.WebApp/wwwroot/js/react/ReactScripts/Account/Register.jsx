@@ -8,6 +8,10 @@ const options = [
     { key: 'f', text: 'Female', value: 'female' },
 ]
 
+// var URL_SOURCE = 'http://localhost:60998';
+var URL_SOURCE = 'https://competitiontasktalent.azurewebsites.net/identity';
+
+
 export default class Register extends React.Component {
     constructor(props) {
         super(props);
@@ -47,7 +51,8 @@ export default class Register extends React.Component {
         };
 
         $.ajax({
-            url: 'http://localhost:60998/authentication/authentication/signup',
+            // url: 'http://localhost:60998/authentication/authentication/signup',
+            url: `${URL_SOURCE}/authentication/authentication/signup`,
             type: 'POST',
             data: JSON.stringify(registerModel),
             contentType: 'application/json',

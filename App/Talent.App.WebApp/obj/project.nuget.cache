@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y9vclNk4ybTwTgAmxUKdcLBSDsmM+XHz0GdD9UDFS34NPOdRhTEMpqOF0cSv07NOeV4e0nQAHa+yaYz9SVcfug==",
+  "dgSpecHash": "C6y0LjL7AzqEQqrQW4Eg6JX61oXDUXYvYB+JRC+1EFGPJvIVnrOA114WqODZKuTjInp+vU1D7A1Wpw/GKhtGVw==",
   "success": true,
-  "projectFilePath": "D:\\Learning Courses\\IC SJRP\\talent-competition\\App\\Talent.App.WebApp\\Talent.App.WebApp.csproj",
+  "projectFilePath": "D:\\Learning Courses\\IC SJRP\\talent-competition-task\\App\\Talent.App.WebApp\\Talent.App.WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LeeZh\\.nuget\\packages\\libuv\\1.10.0\\libuv.1.10.0.nupkg.sha512",
     "C:\\Users\\LeeZh\\.nuget\\packages\\microsoft.applicationinsights\\2.4.0\\microsoft.applicationinsights.2.4.0.nupkg.sha512",

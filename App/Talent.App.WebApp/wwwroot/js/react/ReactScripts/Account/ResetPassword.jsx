@@ -4,6 +4,10 @@ import { SingleInput } from '../Form/SingleInput.jsx'
 import { Select } from '../Form/Select.jsx'
 import { FormErrors } from '../Form/FormErrors.jsx'
 
+// var URL_SOURCE = 'http://localhost:60998';
+var URL_SOURCE = 'https://competitiontasktalent.azurewebsites.net/identity';
+
+
 export default class ResetPassword extends React.Component {
     constructor(props) {
         super(props);
@@ -42,7 +46,8 @@ export default class ResetPassword extends React.Component {
             Email: email,
             Token: token
         }
-        let url = `http://localhost:60998/authentication/authentication/verifyResetPasswordToken?o=${email}&p=${token}`;
+        let url = `${URL_SOURCE}/authentication/authentication/verifyResetPasswordToken?o=${email}&p=${token}`;
+
         $.ajax({
             url: url,
             type: 'POST',

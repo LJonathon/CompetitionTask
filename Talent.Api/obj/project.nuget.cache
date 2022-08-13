@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m6F75WOdwoJaJSp02qoHU+RH2y8Vs7gOQB4RMxv0+rggJLnUgg4DrbyzuzuSWfjvFRRSraWGqaMRxvKY+csG+Q==",
+  "dgSpecHash": "M4HYV5bIyRrJCST9ruRMXrzgvigklgKLMoT98Ntzo7Cjpyna9yJgyfqvEHOGt9Xcjabpb3m9Caj4f5yeOvRUmA==",
   "success": true,
-  "projectFilePath": "D:\\Learning Courses\\IC SJRP\\talent-competition\\Talent.Api\\Talent.Api.csproj",
+  "projectFilePath": "D:\\Learning Courses\\IC SJRP\\talent-competition-task\\Talent.Api\\Talent.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LeeZh\\.nuget\\packages\\awssdk.core\\3.3.24\\awssdk.core.3.3.24.nupkg.sha512",
     "C:\\Users\\LeeZh\\.nuget\\packages\\awssdk.s3\\3.3.18.3\\awssdk.s3.3.3.18.3.nupkg.sha512",

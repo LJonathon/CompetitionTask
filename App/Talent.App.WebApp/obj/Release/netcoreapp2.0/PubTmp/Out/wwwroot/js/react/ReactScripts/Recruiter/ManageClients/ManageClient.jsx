@@ -8,6 +8,13 @@ import Cookies from 'js-cookie';
 import ClientProfileModal from './ClientProfile.jsx';
 import InviteClientModal from './InviteClient.jsx';
 
+
+// var URL_SOURCE = 'http://localhost:60290';
+// var URL_SOURCE = 'https://competitiontasktalent.azurewebsites.net/profile';
+// var URL_SOURCE = 'http://localhost:60998';
+// var URL_SOURCE = 'https://competitiontasktalent.azurewebsites.net/identity';
+
+
 export default class ManageClient extends React.Component {
     constructor(props) {
         super(props);

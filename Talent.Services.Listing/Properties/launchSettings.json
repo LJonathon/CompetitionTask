@@ -3,7 +3,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:51689/",
+      //"applicationUrl": "http://localhost:51689/",
+      "applicationUrl": "https://competitiontasktalent.azurewebsites.net/talent/",
       "sslPort": 0
     }
   },
@@ -21,7 +22,8 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:51689/"
+      //"applicationUrl": "http://localhost:51689/",
+      "applicationUrl": "https://competitiontasktalent.azurewebsites.net/talent/"
     }
   }
 }

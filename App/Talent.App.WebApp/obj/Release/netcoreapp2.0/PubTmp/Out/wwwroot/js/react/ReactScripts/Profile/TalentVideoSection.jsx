@@ -1,6 +1,11 @@
 ﻿import React, { Component } from 'react'
 import VideoUpload from './VideoUpload.jsx'
 
+
+// var URL_SOURCE = 'http://localhost:60290';
+var URL_SOURCE = 'https://competitiontasktalent.azurewebsites.net/profile';
+
+
 export class TalentVideoSection extends Component {
     constructor(props) {
         super(props)
@@ -49,7 +54,7 @@ export class TalentVideoSection extends Component {
             <VideoUpload
                 videoName={this.state.profileData.videoName}
                 updateProfileData={this.updateForComponentId}
-                saveVideoUrl={'http://localhost:60290/profile/profile/updateTalentVideo'}
+                saveVideoUrl={`${URL_SOURCE}/profile/profile/updateTalentVideo`}
             />
         )
         uploaders.push(<VideoUpload videoName='' updateProfileData={this.updateForComponentId} />)

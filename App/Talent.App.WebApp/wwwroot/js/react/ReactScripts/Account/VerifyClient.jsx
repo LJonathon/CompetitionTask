@@ -6,6 +6,9 @@ import { SingleInput } from '../Form/SingleInput.jsx'
 import Cookies from 'js-cookie';
 import { userNavigation } from './UserNavigation.jsx'
 
+// var URL_SOURCE = 'http://localhost:60998';
+var URL_SOURCE = 'https://competitiontasktalent.azurewebsites.net/identity';
+
 export default class VerifyClient extends React.Component {
     constructor(props) {
         super(props);
@@ -46,7 +49,7 @@ export default class VerifyClient extends React.Component {
         let data = {
             recruiterEmail, clientEmail, resetPasswordToken
         }
-        let url = `http://localhost:60998/authentication/authentication/verifyClientToken?recruiterEmail=${recruiterEmail}&clientEmail=${clientEmail}&resetPasswordToken=${resetPasswordToken}`;
+        let url = `${URL_SOURCE}/authentication/authentication/verifyClientToken?recruiterEmail=${recruiterEmail}&clientEmail=${clientEmail}&resetPasswordToken=${resetPasswordToken}`;
         $.ajax({
             url: url,
             type: 'POST',
@@ -129,7 +132,7 @@ export default class VerifyClient extends React.Component {
     savePassword() {
         let { newPassword, recruiterEmail, clientEmail, resetPasswordToken } = this.state;
         
-        let resetUrl = `http://localhost:60998/authentication/authentication/validateInvitation?recruiterEmail=${recruiterEmail}&clientEmail=${clientEmail}&resetPasswordToken=${resetPasswordToken}`;
+        let resetUrl = `${URL_SOURCE}/authentication/authentication/validateInvitation?recruiterEmail=${recruiterEmail}&clientEmail=${clientEmail}&resetPasswordToken=${resetPasswordToken}`;
 
         $.ajax({
             url: resetUrl,

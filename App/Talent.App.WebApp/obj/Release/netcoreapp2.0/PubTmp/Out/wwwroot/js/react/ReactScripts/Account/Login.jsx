@@ -7,6 +7,10 @@ import { FormErrors } from '../Form/FormErrors.jsx'
 import Cookies from 'js-cookie'
 import { EmailVerification } from './EmailVerification.jsx';
 
+// var URL_SOURCE = 'http://localhost:60998';
+var URL_SOURCE = 'https://competitiontasktalent.azurewebsites.net/identity';
+
+
 export default class LoginForm extends React.Component {
     constructor(props) {
         super(props);
@@ -89,7 +93,8 @@ export default class LoginForm extends React.Component {
         }
 
         $.ajax({
-            url: 'http://localhost:60998/authentication/authentication/signin',
+            // url: 'http://localhost:60998/authentication/authentication/signin',
+            url: `${URL_SOURCE}/authentication/authentication/signin`,
             type: 'POST',
             data: JSON.stringify(loginModel),
             contentType: 'application/json',

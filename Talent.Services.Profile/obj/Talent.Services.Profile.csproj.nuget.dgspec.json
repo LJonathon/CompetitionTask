@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Learning Courses\\IC SJRP\\talent-competition\\Talent.Services.Profile\\Talent.Services.Profile.csproj": {}
+    "D:\\Learning Courses\\IC SJRP\\talent-competition-task\\Talent.Services.Profile\\Talent.Services.Profile.csproj": {}
   },
   "projects": {
-    "D:\\Learning Courses\\IC SJRP\\talent-competition\\Talent.Common\\Talent.Common.csproj": {
+    "D:\\Learning Courses\\IC SJRP\\talent-competition-task\\Talent.Common\\Talent.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Learning Courses\\IC SJRP\\talent-competition\\Talent.Common\\Talent.Common.csproj",
+        "projectUniqueName": "D:\\Learning Courses\\IC SJRP\\talent-competition-task\\Talent.Common\\Talent.Common.csproj",
         "projectName": "Talent.Common",
-        "projectPath": "D:\\Learning Courses\\IC SJRP\\talent-competition\\Talent.Common\\Talent.Common.csproj",
+        "projectPath": "D:\\Learning Courses\\IC SJRP\\talent-competition-task\\Talent.Common\\Talent.Common.csproj",
         "packagesPath": "C:\\Users\\LeeZh\\.nuget\\packages\\",
-        "outputPath": "D:\\Learning Courses\\IC SJRP\\talent-competition\\Talent.Common\\obj\\",
+        "outputPath": "D:\\Learning Courses\\IC SJRP\\talent-competition-task\\Talent.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LeeZh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -121,14 +121,14 @@
         }
       }
     },
-    "D:\\Learning Courses\\IC SJRP\\talent-competition\\Talent.Services.Profile\\Talent.Services.Profile.csproj": {
+    "D:\\Learning Courses\\IC SJRP\\talent-competition-task\\Talent.Services.Profile\\Talent.Services.Profile.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Learning Courses\\IC SJRP\\talent-competition\\Talent.Services.Profile\\Talent.Services.Profile.csproj",
+        "projectUniqueName": "D:\\Learning Courses\\IC SJRP\\talent-competition-task\\Talent.Services.Profile\\Talent.Services.Profile.csproj",
         "projectName": "Talent.Services.Profile",
-        "projectPath": "D:\\Learning Courses\\IC SJRP\\talent-competition\\Talent.Services.Profile\\Talent.Services.Profile.csproj",
+        "projectPath": "D:\\Learning Courses\\IC SJRP\\talent-competition-task\\Talent.Services.Profile\\Talent.Services.Profile.csproj",
         "packagesPath": "C:\\Users\\LeeZh\\.nuget\\packages\\",
-        "outputPath": "D:\\Learning Courses\\IC SJRP\\talent-competition\\Talent.Services.Profile\\obj\\",
+        "outputPath": "D:\\Learning Courses\\IC SJRP\\talent-competition-task\\Talent.Services.Profile\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LeeZh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -145,8 +145,8 @@
           "netcoreapp2.0": {
             "targetAlias": "netcoreapp2.0",
             "projectReferences": {
-              "D:\\Learning Courses\\IC SJRP\\talent-competition\\Talent.Common\\Talent.Common.csproj": {
-                "projectPath": "D:\\Learning Courses\\IC SJRP\\talent-competition\\Talent.Common\\Talent.Common.csproj"
+              "D:\\Learning Courses\\IC SJRP\\talent-competition-task\\Talent.Common\\Talent.Common.csproj": {
+                "projectPath": "D:\\Learning Courses\\IC SJRP\\talent-competition-task\\Talent.Common\\Talent.Common.csproj"
               }
             }
           }

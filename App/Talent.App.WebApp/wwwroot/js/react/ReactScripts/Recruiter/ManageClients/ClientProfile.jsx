@@ -9,6 +9,10 @@ import Skill from '../../Profile/Skill.jsx';
 import PhotoUpload from '../../Profile/PhotoUpload.jsx';
 import VideoUpload from '../../Profile/VideoUpload.jsx'
 
+
+// var URL_SOURCE = 'http://localhost:60290';
+var URL_SOURCE = 'https://competitiontasktalent.azurewebsites.net/profile';
+
 class ClientProfileModal extends React.Component {
     constructor(props) {
         super(props);
@@ -23,7 +27,7 @@ class ClientProfileModal extends React.Component {
         if (id != undefined) {
             var cookies = Cookies.get('talentAuthToken');
             $.ajax({
-                url: 'http://localhost:60290/profile/profile/getEmployerProfile?id=' + id + '&role=' + 'employer',
+                url: `${URL_SOURCE}/profile/profile/getEmployerProfile?id=` + id + '&role=' + 'employer',
                 headers: {
                     'Authorization': 'Bearer ' + cookies,
                     'Content-Type': 'application/json'
@@ -51,7 +55,7 @@ class ClientProfileModal extends React.Component {
     saveData() {
         var cookies = Cookies.get('talentAuthToken');
         $.ajax({
-            url: 'http://localhost:60290/profile/profile/saveClientProfile',
+            url: `${URL_SOURCE}/profile/profile/saveClientProfile`,
             headers: {
                 'Authorization': 'Bearer ' + cookies,
                 'Content-Type': 'application/json'

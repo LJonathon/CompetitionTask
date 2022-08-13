@@ -7,3 +7,14 @@
     margin:auto;
 
 }
+
+.card-group-style{
+    display: flex;
+    text-align: "center";
+    justify-content:"center"; 
+    flex-direction:"row"
+}
+
+.pagination-style{
+    text-align: center;
+}

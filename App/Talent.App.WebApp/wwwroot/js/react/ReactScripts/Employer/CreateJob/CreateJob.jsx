@@ -13,6 +13,10 @@ import { JobDescription } from './JobDescription.jsx';
 import { JobSummary } from './JobSummary.jsx';
 import { BodyWrapper, loaderData } from '../../Layout/BodyWrapper.jsx';
 
+// var URL_SOURCE = 'http://localhost:51689';
+var URL_SOURCE = 'https://competitiontasktalent.azurewebsites.net/talent';
+
+
 export default class CreateJob extends React.Component {
     constructor(props) {
         super(props);
@@ -66,8 +70,8 @@ export default class CreateJob extends React.Component {
         var copyJobParam = this.props.match.params.copyId ? this.props.match.params.copyId : "";
 
         if (param != "" || copyJobParam != "") {
-            var link = param != "" ? 'http://localhost:51689/listing/listing/GetJobByToEdit?id=' + param
-                : 'http://localhost:51689/listing/listing/GetJobForCopy?id=' + copyJobParam;
+            var link = param != "" ? `${URL_SOURCE}/listing/listing/GetJobByToEdit?id=` + param
+                : `${URL_SOURCE}/listing/listing/GetJobForCopy?id=` + copyJobParam;
             var cookies = Cookies.get('talentAuthToken');
             $.ajax({
                 url: link,
@@ -100,7 +104,7 @@ export default class CreateJob extends React.Component {
         console.log("date:", jobData.jobDetails.startDate);
         var cookies = Cookies.get('talentAuthToken');   
         $.ajax({
-            url: 'http://localhost:51689/listing/listing/createUpdateJob',
+            url: `${URL_SOURCE}/listing/listing/createUpdateJob`,
             headers: {
                 'Authorization': 'Bearer ' + cookies,
                 'Content-Type': 'application/json'

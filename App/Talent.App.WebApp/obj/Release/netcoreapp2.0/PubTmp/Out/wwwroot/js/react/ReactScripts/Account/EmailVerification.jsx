@@ -6,6 +6,10 @@ import { userNavigation } from './UserNavigation.jsx'
 import { FormErrors } from '../Form/FormErrors.jsx'
 import Cookies from 'js-cookie'
 
+// var URL_SOURCE = 'http://localhost:60998';
+var URL_SOURCE = 'https://competitiontasktalent.azurewebsites.net/identity';
+
+
 export class EmailVerification extends React.Component {
     constructor(props) {
         super(props);
@@ -68,7 +72,7 @@ export class EmailVerification extends React.Component {
     verifyEmail() {
         this.setState({ isLoading: true });
         $.ajax({
-            url: 'http://localhost:60998/authentication/authentication/resendVerificationLink',
+            url: `${URL_SOURCE}/authentication/authentication/resendVerificationLink`,
             type: 'POST',
             data: JSON.stringify(this.state.email),
             contentType: 'application/json',

@@ -6,7 +6,12 @@ import { LoggedInNavigation } from '../../Layout/LoggedInNavigation.jsx';
 import { JobSummaryCard } from './JobSummaryCard.jsx';
 import { BodyWrapper, loaderData } from '../../Layout/BodyWrapper.jsx';
 import { Pagination, Icon, Dropdown, Checkbox, Accordion, Form, Segment, Card, CardGroup } from 'semantic-ui-react';
-// import "./ManageJob.css";
+import "./ManageJob.css";
+
+// var URL_SOURCE = 'http://localhost:51689';
+var URL_SOURCE = 'https://competitiontasktalent.azurewebsites.net/talent';
+
+
 
 export default class ManageJob extends React.Component {
     constructor(props) {
@@ -92,7 +97,7 @@ export default class ManageJob extends React.Component {
     // }
 
     loadData(callback) {
-        var link = 'http://localhost:51689/listing/listing/getSortedEmployerJobs';
+        var link = `${URL_SOURCE}/listing/listing/getSortedEmployerJobs`;
         var cookies = Cookies.get('talentAuthToken');
 
        // your ajax call and other logic goes here
@@ -178,10 +183,21 @@ export default class ManageJob extends React.Component {
                             // defaultValue ={[{key: 'Newest First',text: 'Newest First',value: 'Newest First',}]}
                         />
                     </span>
-                    <br />
+                    <br></br>
                     <p>{jobData.length===0? "No Jobs Found":""}</p>
 
-                    <CardGroup style={{align: "center"}}>
+                    <br></br>
+
+                    <CardGroup 
+                    // itemsPerRow = {3}
+                    // stackable={true}
+                    // doubling = {true}
+                    // className='card-group-style'
+                    style={{ 
+                    display:"flex",
+                    justifyContent:"center", 
+                    flexDirection:"row"}}
+                    >
                             {jobData.map(j =>(
                                 <Card style={{width:"350px",padding:"5px",margin:"20px"}} key = {j.id}>
                                 {/* <Card className='card-style'> */}
@@ -197,16 +213,24 @@ export default class ManageJob extends React.Component {
 
                             ))}
                     </CardGroup>
-                    <Pagination
 
-                    activePage={this.state.activePage}
-                    totalPages={this.state.totalPages}
-                    siblingRange ={0}
-                    boundaryRange={1}
-                    onPageChange={this.handlePaginationChange}
+                    <br></br>
+                    <p 
+                    // style = {{textAlign:"center"}} 
+                    // className='pagination-style'
+                    >
+                        <Pagination
+                            style = {{textAlign:"center"}} 
+                            activePage={this.state.activePage}
+                            totalPages={this.state.totalPages}
+                            siblingRange ={0}
+                            boundaryRange={1}
+                            ellipsisItem={null}
+                            onPageChange={this.handlePaginationChange}
 
-                    />
-
+                        />
+                    </p>
+                    <br></br>
                </div>
             </BodyWrapper>
         )

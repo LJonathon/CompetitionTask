@@ -11,6 +11,10 @@ import PropTypes from 'prop-types'
 import LoggedInBanner from './LoggedInBanner.jsx'
 import LoggedOutBanner from './LoggedOutBanner.jsx'
 
+
+// var URL_SOURCE = 'http://localhost:60290';
+var URL_SOURCE = 'https://competitiontasktalent.azurewebsites.net/profile';
+
 export default class AdaptiveBanner extends React.Component {
     constructor(props) {
         super(props)
@@ -41,7 +45,7 @@ export default class AdaptiveBanner extends React.Component {
     isUserAuthenticated() {
         var cookies = Cookies.get('talentAuthToken')
         $.ajax({
-            url: 'http://localhost:60290/profile/profile/isUserAuthenticated',
+            url: `${URL_SOURCE}/profile/profile/isUserAuthenticated`,
             headers: {
                 'Authorization': 'Bearer ' + cookies,
                 'Content-Type': 'application/json'

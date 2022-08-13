@@ -4,6 +4,10 @@ import { Select } from '../Form/Select.jsx'
 import { CheckBox } from '../Form/CheckBox.jsx'
 import { FormErrors } from '../Form/FormErrors.jsx'
 
+// var URL_SOURCE = 'http://localhost:60998';
+var URL_SOURCE = 'https://competitiontasktalent.azurewebsites.net/identity';
+
+
 export default class ForgotPassword extends React.Component {
     constructor(props) {
         super(props);
@@ -32,7 +36,7 @@ export default class ForgotPassword extends React.Component {
         var forgotPasswordModel = { email: this.state.email };
 
         $.ajax({
-            url: 'http://localhost:60998/authentication/authentication/forgetpassword',
+            url: `${URL_SOURCE}/authentication/authentication/forgetpassword`,
             type: 'POST',
             data: JSON.stringify(forgotPasswordModel),
             contentType: 'application/json',

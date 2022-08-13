@@ -3,6 +3,9 @@ import Cookies from 'js-cookie';
 import { userNavigation } from '../Account/UserNavigation.jsx'
 import queryString from 'query-string'
 
+// var URL_SOURCE = 'http://localhost:60998';
+var URL_SOURCE = 'https://competitiontasktalent.azurewebsites.net/identity';
+
 export default class EmailConfirmation extends React.Component {
     constructor(props) {
         super(props);
@@ -21,7 +24,7 @@ export default class EmailConfirmation extends React.Component {
     componentDidMount() {
         //verifyEmail
         $.ajax({
-            url: 'http://localhost:60998/authentication/authentication/' + this.state.pagetype,
+            url: `${URL_SOURCE}/authentication/authentication/` + this.state.pagetype,
             type: 'GET',
             contentType: 'application/json',
             dataType: 'json',
